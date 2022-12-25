@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: hsl(204deg, 43%, 93%);
+  padding: 3.6rem 1.6rem;
+  display: grid;
+  place-items: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+  color: white;
+}
+
+.main {
+  width: 100%;
+  max-width: 63rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  grid-column: 1/-1;
+  background-color: white;
+  padding: 3.6rem 3.2rem;
+}
+.description h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(179deg, 62%, 43%);
+  margin-bottom: 1.2rem;
+}
+.description h2 {
+  color: hsl(71deg, 73%, 54%);
+}
+.description .paragraph {
+  color: hsl(218deg, 22%, 67%);
+}
+
+.cta {
+  background-color: hsl(179deg, 62%, 43%);
+  color: white;
+  padding: 3.2rem;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.pricing .paragraph {
+  color: hsl(204deg, 43%, 93%);
+}
+
+.price {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.btn {
+  display: block;
+  margin-top: 3.6rem;
+  width: 100%;
+  border: none;
+  font: inherit;
+  padding: 1.4rem;
+  font-weight: 700;
+  color: white;
+  background-color: hsl(71deg, 73%, 54%);
+  border-radius: 0.6rem;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.features {
+  background-color: hsl(179deg, 47%, 52%);
+  padding: 3.2rem;
+}
+.features__list {
+  list-style: none;
+}
+.features__item {
+  color: hsl(204deg, 43%, 93%);
+}
+
+@media (max-width: 39.75em) {
+  .main {
+    max-width: 40rem;
+  }
+}/*# sourceMappingURL=style.css.map */
