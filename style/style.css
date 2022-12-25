@@ -1,95 +1,140 @@
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
 }
 
 body {
   font-family: "Karla", sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
   min-height: 100vh;
   background-color: hsl(204deg, 43%, 93%);
-  padding: 3.6rem 1.6rem;
+  padding: 2.25em 1em;
   display: grid;
   place-items: center;
 }
 
 h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.4rem;
+  font-size: 1.125rem;
+  margin-bottom: 0.875em;
   color: white;
 }
 
 .main {
   width: 100%;
-  max-width: 63rem;
+  max-width: 630px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-  border-radius: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.1);
 }
 
 .description {
   grid-column: 1/-1;
   background-color: white;
-  padding: 3.6rem 3.2rem;
+  padding: 2.25em 2em;
 }
 .description h1 {
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: hsl(179deg, 62%, 43%);
-  margin-bottom: 1.2rem;
-}
-.description h2 {
-  color: hsl(71deg, 73%, 54%);
+  margin-bottom: 0.75em;
 }
 .description .paragraph {
   color: hsl(218deg, 22%, 67%);
+}
+.description .paragraph--yellow {
+  color: hsl(71deg, 73%, 54%);
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  font-size: 1.125rem;
 }
 
 .cta {
   background-color: hsl(179deg, 62%, 43%);
   color: white;
-  padding: 3.2rem;
+  padding: 2em;
 }
 
 .pricing {
   display: flex;
   align-items: center;
-  gap: 1.4rem;
+  gap: 0.875em;
 }
 .pricing .paragraph {
   color: hsl(204deg, 43%, 93%);
 }
 
 .price {
-  font-size: 3.6rem;
+  font-size: 2.25rem;
   font-weight: 700;
 }
 
 .btn {
   display: block;
-  margin-top: 3.6rem;
+  margin-top: 2em;
   width: 100%;
   border: none;
   font: inherit;
-  padding: 1.4rem;
+  padding: 0.875em;
   font-weight: 700;
+  text-align: center;
   color: white;
   background-color: hsl(71deg, 73%, 54%);
-  border-radius: 0.6rem;
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .features {
   background-color: hsl(179deg, 47%, 52%);
-  padding: 3.2rem;
+  padding: 2em;
 }
 .features__list {
   list-style: none;
@@ -100,6 +145,6 @@ h2 {
 
 @media (max-width: 39.75em) {
   .main {
-    max-width: 40rem;
+    max-width: 400px;
   }
 }/*# sourceMappingURL=style.css.map */
