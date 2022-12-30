@@ -9,11 +9,6 @@
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -52,9 +47,8 @@ h6 {
 
 body {
   font-family: "Karla", sans-serif;
-  min-height: 100vh;
   background-color: hsl(204deg, 43%, 93%);
-  padding: 2.25em 1em;
+  padding: 2.25em;
   display: grid;
   place-items: center;
 }

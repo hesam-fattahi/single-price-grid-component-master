@@ -8,9 +8,8 @@ $color-grayish-blue: hsl(218, 22%, 67%);
 
 body {
   font-family: "Karla", sans-serif;
-  min-height: 100vh;
   background-color: $color-gray;
-  padding: 2.25em 1em;
+  padding: 2.25em;
   display: grid;
   place-items: center;
 }
